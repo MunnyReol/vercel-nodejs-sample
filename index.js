@@ -4,11 +4,11 @@ const app = express ()
 app.get("/", (req, res) => {
 res.status(200)
 res.send(`
-Hello Munny, Welcome To The World. Say, Hello World :)
+Hello Munny Reol, Welcome To The World. Say, Hello World :)
 `)
 })
 
-app.get("/about", (req, res) -> {
+app.get("/about", (req, res) => {
 res.status(200)
 res.send(`About Munny Reol.
 I Love Relaxed Song.
@@ -16,7 +16,7 @@ I'm the biggest fan of Kumar Sanu ❤️😇
 `)
 } )
 
-app.get("/:id", (req, res) -> {
+app.get("/:id", (req, res) => {
 res.send(`You Entered ${req.params.id}`)
 })
 
